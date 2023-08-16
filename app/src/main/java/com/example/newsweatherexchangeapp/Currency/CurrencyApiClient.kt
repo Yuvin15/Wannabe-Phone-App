@@ -23,7 +23,6 @@ object CurrencyApiClient {
             .build()
             .create(CurrencyApi::class.java)
 
-
     fun buildService():CurrencyApi{
         return retrofit
     }

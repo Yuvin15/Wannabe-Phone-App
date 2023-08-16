@@ -6,6 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface WeatherApi {
-    @GET("1day")
-    fun getWeather(@Query("country_code") city: String, @Query("apiKey") apiKey: String): Observable<Weather>
+    @GET("1day/305605")
+    fun getWeather( @Query("apikey") apiKey: String
+    ): Observable<Weather>
 }

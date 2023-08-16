@@ -20,7 +20,7 @@ class MainActivity2 : AppCompatActivity() {
         val compositeDisposable = CompositeDisposable()
         compositeDisposable.add(
             WeatherApiClient.buildService()
-                .getWeather("305605", "ouon2ZezMb4QAwjGH7czk71UWuGg2I3J")
+                .getWeather( "ouon2ZezMb4QAwjGH7czk71UWuGg2I3J")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({ response ->
@@ -37,6 +37,9 @@ class MainActivity2 : AppCompatActivity() {
         Log.d("[news]", response.toString())
         val daily_Forecasts: ArrayList<DailyForecasts> = response.DailyForecasts
         val currentTemp = findViewById<TextView>(R.id.textView)
+        val temperatureValue = daily_Forecasts[0].Temperature
+
+        currentTemp.text = "Temperature: $temperatureValue"
     }
 
     private fun onFailure(t: Throwable) {

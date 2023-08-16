@@ -45,7 +45,7 @@ class MainActivity3 : AppCompatActivity() {
         }
 
         private fun onFailure(t: Throwable) {
-            Toast.makeText(this, "An error occurred", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, t.message, Toast.LENGTH_SHORT).show()
             t.printStackTrace()
         }
 }

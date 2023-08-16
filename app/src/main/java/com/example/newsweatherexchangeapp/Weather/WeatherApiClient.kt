@@ -6,7 +6,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 object WeatherApiClient {
-    private  const val BASE_URL = "http://dataservice.accuweather.com/forecasts/v1/daily/"
+    private  const val BASE_URL = "https://dataservice.accuweather.com/forecasts/v1/daily/"
 
     private val client = OkHttpClient()
         .newBuilder()

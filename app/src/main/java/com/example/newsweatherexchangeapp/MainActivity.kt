@@ -19,18 +19,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val buttonClick = findViewById<Button>(R.id.button)
+        val buttonClick2 = findViewById<Button>(R.id.button2)
 
         buttonClick.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
-
+        buttonClick2.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
 
         val currencyValueText = findViewById<TextView>(R.id.currency_value)
 
         val compositeDisposable = CompositeDisposable()
         compositeDisposable.add(
-                CurrencyApiClient.buildService().getCurrency("USD", "ZAR", "100")
+                CurrencyApiClient.buildService().getCurrency("USD", "ZAR", "1")
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe({ response ->
