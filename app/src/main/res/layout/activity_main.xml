@@ -6,20 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/currency_value"
-        android:layout_width="310dp"
-        android:layout_height="111dp"
+        android:layout_width="213dp"
+        android:layout_height="56dp"
         android:text="Cayde told me to change this :)"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
-
+        app:layout_constraintVertical_bias="0.023" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/currency_fragment"
@@ -36,7 +36,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/weather_fragment"
-        android:name="com.example.newsweatherexchangeapp.CurrencyFragment"
+        android:name="com.example.newsweatherexchangeapp.WeatherFragment"
         android:layout_width="190dp"
         android:layout_height="169dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +49,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/news_fragment"
-        android:name="com.example.newsweatherexchangeapp.CurrencyFragment"
+        android:name="com.example.newsweatherexchangeapp.NewsFragment"
         android:layout_width="345dp"
         android:layout_height="372dp"
         app:layout_constraintBottom_toBottomOf="parent"
