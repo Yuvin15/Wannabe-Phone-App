@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/currency_value"
-        android:layout_width="216dp"
-        android:layout_height="89dp"
-        android:text="TextView"
-        android:textSize="40dp"
+        android:layout_width="310dp"
+        android:layout_height="111dp"
+        android:text="Cayde told me to change this :)"
+        android:textColor="@color/black"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,28 +20,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.046" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="228dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/currency_fragment"
+        android:name="com.example.newsweatherexchangeapp.CurrencyFragment"
+        android:layout_width="181dp"
+        android:layout_height="168dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.294"
+        tools:layout="@layout/fragment_currency" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/weather_fragment"
+        android:name="com.example.newsweatherexchangeapp.CurrencyFragment"
+        android:layout_width="190dp"
+        android:layout_height="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294"
+        tools:layout="@layout/fragment_currency" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/news_fragment"
+        android:name="com.example.newsweatherexchangeapp.CurrencyFragment"
+        android:layout_width="345dp"
+        android:layout_height="372dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        tools:layout="@layout/fragment_currency" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
