@@ -6,7 +6,7 @@
 - All of the above are in activities.
 
 ## What to implement?
-- Make eveything into a fragment.
-- Make a setting page.
+-  ~~Make eveything into a fragment.~~
+- Make a setting page work.
 - Make a location getter when program loads.
 - Maybe authentication?
