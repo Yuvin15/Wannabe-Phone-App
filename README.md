@@ -10,3 +10,7 @@
 - Make a setting page work.
 - Make a location getter when program loads.
 - Maybe authentication?
+
+
+##
+Cayde was here UwU
